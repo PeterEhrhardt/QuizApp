@@ -4,7 +4,7 @@
 }
 #navbar-container {
   width: 100%;
-  height: 72px;
+  height: 86px;
   display: grid;
   place-items: center;
   grid-template-columns: 20% 70%;
@@ -16,7 +16,6 @@
   font-size: 20px;
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
-  border-bottom: 2px solid white;
 }
 
 #logo-container {
@@ -26,18 +25,20 @@
 .navbar-item {
   cursor: pointer;
 }
-.navbar-item:hover {
-  color: black;
-}
-#logo-container:hover {
-  color: black;
-}
 
-#DropdownMenu {
-  color: black;
+#drop-down-menu {
   display: none;
+  position: absolute;
 }
 
-#halla-container:hover > ul {
+#drop-down-menu > li {
+  list-style: none;
+}
+
+#halla-container:hover {
+  color: black;
+}
+
+#halla-container:hover > #drop-down-menu {
   display: block;
 }

@@ -14,17 +14,14 @@ const Navbar = () => {
         <div
           id="halla-container"
           onClick={handleHallaClick}
-          className="navbar-item"
-        >
+          className="navbar-item">
           halla
-          <div>
-            <ul id="DropdownMenu">
-              <li>på</li>
-              <li>deg</li>
-              <li>din</li>
-              <li>gris</li>
-            </ul>
-          </div>
+          <ul id="drop-down-menu">
+            <li>på</li>
+            <li>deg</li>
+            <li>din</li>
+            <li>gris</li>
+          </ul>
         </div>
         <div className="navbar-item">på</div>
         <div className="navbar-item">deg</div>
