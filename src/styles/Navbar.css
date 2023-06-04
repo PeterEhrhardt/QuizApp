@@ -35,10 +35,10 @@
   list-style: none;
 }
 
-#halla-container:hover {
+#quiz-container:hover {
   color: black;
 }
 
-#halla-container:hover > #drop-down-menu {
+#quiz-container:hover > #drop-down-menu {
   display: block;
 }

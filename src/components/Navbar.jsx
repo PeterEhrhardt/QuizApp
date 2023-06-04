@@ -12,15 +12,16 @@ const Navbar = () => {
       <div id="logo-container"> QuizJizz</div>
       <div id="tema-container">
         <div
-          id="halla-container"
+          id="quiz-container"
           onClick={handleHallaClick}
-          className="navbar-item">
-          halla
+          className="navbar-item"
+        >
+          Quiz
           <ul id="drop-down-menu">
-            <li>på</li>
-            <li>deg</li>
-            <li>din</li>
-            <li>gris</li>
+            <li>Sport</li>
+            <li>Film</li>
+            <li>Friluft</li>
+            <li>Geografi</li>
           </ul>
         </div>
         <div className="navbar-item">på</div>
