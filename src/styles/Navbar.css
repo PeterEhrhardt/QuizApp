@@ -22,3 +22,22 @@
 #logo-container {
   font-size: 35px;
 }
+
+.navbar-item {
+  cursor: pointer;
+}
+.navbar-item:hover {
+  color: black;
+}
+#logo-container:hover {
+  color: black;
+}
+
+#DropdownMenu {
+  color: black;
+  display: none;
+}
+
+#halla-container:hover > ul {
+  display: block;
+}
