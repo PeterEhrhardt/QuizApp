@@ -24,9 +24,9 @@ const Navbar = () => {
             <li>Geografi</li>
           </ul>
         </div>
-        <div className="navbar-item">på</div>
-        <div className="navbar-item">deg</div>
-        <div className="navbar-item">tjukken</div>
+        <div className="navbar-item">Ola</div>
+        <div className="navbar-item">er</div>
+        <div className="navbar-item">feit</div>
       </div>
     </div>
   );
