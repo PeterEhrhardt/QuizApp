@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 
 import SignIn from "./components/SignIn";
+import Navbar from "./components/Navbar";
 
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
@@ -20,7 +21,9 @@ function App() {
 
   return (
     <>
-      <div>Yay!</div>
+      <div>
+        <Navbar />
+      </div>
     </>
   );
 }

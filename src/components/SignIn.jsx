@@ -64,7 +64,7 @@ const SignIn = (props) => {
     <div id="top-container">
       <div id="header-container">
         <div id="logo-and-pizza">
-          <div id="logo-container">
+          <div id="logo-container" className="logo">
             <h1>NPDb</h1>
           </div>
           <img src={Pizza} alt="pizza" id="pizza" />
@@ -86,6 +86,7 @@ const SignIn = (props) => {
             </h4>
             <input
               type="text"
+              className="input-sign-in"
               onChange={(e) => setSignInEmail(e.target.value)}></input>
           </div>
           <div>
@@ -93,15 +94,12 @@ const SignIn = (props) => {
             <input
               type="password"
               name="password"
+              className="input-sign-in"
               onChange={(e) => setSignInPassword(e.target.value)}></input>
           </div>
         </div>
         <div id="sign-in-container">
-          <button
-            className="sign-in-button"
-            id="faenskap"
-            onClick={signIn}
-            type="button">
+          <button className="sign-in-button" onClick={signIn} type="button">
             Sign In
           </button>
           <div>

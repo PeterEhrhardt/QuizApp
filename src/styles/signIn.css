@@ -25,13 +25,6 @@
 #logo-container {
   width: 200px;
   height: 100px;
-  background: linear-gradient(
-    rgba(78, 190, 255, 0.859),
-    rgba(0, 75, 115, 0.854)
-  );
-  display: grid;
-  place-items: center;
-  border-radius: 20px;
 }
 
 h1 {
@@ -157,7 +150,7 @@ h1 {
   top: 2px;
 }
 
-input {
+.input-sign-in {
   width: 400px;
   height: 40px;
   border-radius: 50px;

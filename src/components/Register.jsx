@@ -50,7 +50,7 @@ const Register = (props) => {
     <div id="top-container">
       <div id="header-container">
         <div id="logo-and-pizza">
-          <div id="logo-container">
+          <div id="logo-container" className="logo">
             <h1>NPDb</h1>
           </div>
           <img src={Pizza} alt="pizza" id="pizza" />
@@ -62,6 +62,7 @@ const Register = (props) => {
             <h4>Email</h4>
             <input
               type="text"
+              className="input-sign-in"
               onChange={(e) => setRegisterEmail(e.target.value)}></input>
           </div>
           <div>
@@ -69,6 +70,7 @@ const Register = (props) => {
             <input
               type="password"
               name="password"
+              className="input-sign-in"
               onChange={(e) => setRegisterPassword(e.target.value)}></input>
           </div>
           <div>
@@ -76,6 +78,7 @@ const Register = (props) => {
             <input
               type="password"
               name="password"
+              className="input-sign-in"
               onChange={(e) => setPasswordConfirm(e.target.value)}></input>
           </div>
         </div>
