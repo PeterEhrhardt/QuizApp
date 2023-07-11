@@ -11,28 +11,31 @@
 }
 
 #navbar-container {
-  width: 90%;
+  width: 100%;
   height: 100%;
   display: grid;
   place-items: center;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 20% 50% 30%;
 }
 
 #logo {
   width: 80px;
   height: 40px;
+  cursor: pointer;
 }
 
 #logo > h1 {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 #input-container {
   position: relative;
+  width: 90%;
+  left: -40px;
 }
 
 #input-navbar {
-  width: 500px;
+  width: 100%;
   height: 30px;
   outline: none;
   border-radius: 5px;
@@ -40,11 +43,70 @@
   padding: 0px 5px;
 }
 
-#search-icon {
-  position: absolute;
-  right: 8px;
-  top: 6px;
-  font-size: 18px;
-  color: rgb(24, 57, 77);
+#search-icon-container {
   cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: rgb(24, 57, 77);
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+
+  border-radius: 5px;
+}
+
+#search-icon {
+  font-size: 18px;
+}
+
+#menu-and-profile {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
+  left: -50px;
+}
+
+#navbar-menu-container {
+  color: white;
+  place-items: center;
+  cursor: pointer;
+  border-right: 2px solid rgba(255, 255, 255, 0.801);
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#navbar-menu-container > h3 {
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  left: 8px;
+}
+
+#bars-icon-navbar {
+  font-size: 18px;
+  position: relative;
+}
+
+#profile-container-navbar {
+  display: flex;
+  color: white;
+  justify-content: center;
+  place-items: center;
+  cursor: pointer;
+}
+
+#profile-container-navbar > h3 {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+#profile-icon {
+  font-size: 18px;
+  position: relative;
+  left: -8px;
 }
