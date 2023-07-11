@@ -13,17 +13,30 @@ body {
 
 .logo {
   background-image: linear-gradient(
-    180deg,
-    hsl(357deg 72% 47%) 0%,
-    hsl(357deg 75% 43%) 11%,
-    hsl(358deg 78% 40%) 22%,
-    hsl(358deg 81% 37%) 33%,
-    hsl(358deg 84% 34%) 44%,
-    hsl(359deg 87% 31%) 56%,
-    hsl(359deg 90% 28%) 67%,
-    hsl(359deg 93% 25%) 78%,
-    hsl(360deg 96% 22%) 89%,
-    hsl(0deg 100% 20%) 100%
+    125deg,
+    hsl(348deg 88% 39%) 0%,
+    hsl(336deg 89% 37%) 13%,
+    hsl(325deg 90% 35%) 19%,
+    hsl(312deg 92% 33%) 23%,
+    hsl(301deg 92% 31%) 27%,
+    hsl(290deg 93% 29%) 31%,
+    hsl(277deg 94% 27%) 34%,
+    hsl(266deg 95% 25%) 38%,
+    hsl(254deg 97% 24%) 41%,
+    hsl(242deg 98% 22%) 44%,
+    hsl(231deg 98% 20%) 47%,
+    hsl(219deg 100% 18%) 50%,
+    hsl(219deg 100% 25%) 53%,
+    hsl(219deg 100% 33%) 56%,
+    hsl(219deg 100% 40%) 59%,
+    hsl(219deg 100% 48%) 62%,
+    hsl(219deg 100% 55%) 66%,
+    hsl(219deg 100% 63%) 69%,
+    hsl(219deg 100% 70%) 73%,
+    hsl(219deg 100% 78%) 77%,
+    hsl(219deg 100% 85%) 81%,
+    hsl(219deg 100% 93%) 87%,
+    hsl(0deg 0% 100%) 100%
   );
   display: grid;
   place-items: center;
