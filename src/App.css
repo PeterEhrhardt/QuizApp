@@ -8,7 +8,7 @@
 body {
   width: 100%;
   height: 100vh;
-  background-color: #c6bcb7;
+  background: linear-gradient(90deg, #ff7700, #f9b434, #ff8922);
 }
 
 .logo {
