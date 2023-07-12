@@ -12,18 +12,23 @@ const cookies = new Cookies();
 function App() {
   const [isSignedIn, setIsSignedIn] = useState(cookies.get("auth-token"));
 
-  if (!isSignedIn) {
+  const [displaySignIn, setDisplaySignIn] = useState(false);
+
+  if (displaySignIn) {
     return (
-      <>
-        <SignIn setIsSignedIn={setIsSignedIn} />
-      </>
+      <div>
+        <SignIn
+          setIsSignedIn={setIsSignedIn}
+          setDisplaySignIn={setDisplaySignIn}
+        />
+      </div>
     );
   }
 
   return (
     <>
       <div>
-        <Navbar />
+        <Navbar isSignedIn={isSignedIn} setDisplaySignIn={setDisplaySignIn} />
         <PizzaChart />
       </div>
     </>

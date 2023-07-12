@@ -40,9 +40,10 @@ const Register = (props) => {
       }
     }
     props.setIsSignedIn(cookies.get("auth-token"));
+    props.setDisplaySignIn(false);
   };
 
-  const handleSignUpClick = () => {
+  const handleGoBackClick = () => {
     props.setRegisterButtonClicked(false);
   };
 
@@ -91,7 +92,7 @@ const Register = (props) => {
           </button>
           <div>
             <p>...or go back to signing in </p>
-            <p id="here" onClick={handleSignUpClick}>
+            <p id="here" onClick={handleGoBackClick}>
               here.
             </p>
           </div>

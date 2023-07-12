@@ -40,6 +40,7 @@ const SignIn = (props) => {
       cookies.set("auth-token", user.user.refreshToken);
       console.log(user);
       props.setIsSignedIn(cookies.get("auth-token"));
+      props.setDisplaySignIn(false);
     } catch (err) {
       console.error(err);
       setErrorMessage("Invalid email and/or password");
@@ -56,6 +57,7 @@ const SignIn = (props) => {
       <Register
         setRegisterButtonClicked={setRegisterButtonClicked}
         setIsSignedIn={props.setIsSignedIn}
+        setDisplaySignIn={props.setDisplaySignIn}
       />
     );
   }
