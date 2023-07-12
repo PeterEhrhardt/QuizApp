@@ -24,10 +24,10 @@ const SignIn = (props) => {
     try {
       const user = await signInWithPopup(auth, provider);
       cookies.set("auth-token", user.user.refreshToken);
+      props.setIsSignedIn(cookies.get("auth-token"));
     } catch (err) {
       console.log(err);
     }
-    props.setIsSignedIn(cookies.get("auth-token"));
   };
 
   const signIn = async () => {

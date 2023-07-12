@@ -19,7 +19,6 @@
   place-items: center;
   grid-template-columns: 20% 50% 30%;
   z-index: 200;
-  box-shadow: 0px 1px 3px black;
 }
 
 #logo {
@@ -160,7 +159,8 @@
   overflow: hidden;
   animation: animation 0.5s ease-in-out;
   position: absolute;
-  top: 64px;
+  top: calc(-100vh + 64px);
+  animation-fill-mode: forwards;
 }
 
 #border-top-container {
@@ -170,7 +170,7 @@
 }
 
 #border-top {
-  height: 3px;
+  height: 2px;
   background-color: white;
   animation: borderAnimation 0.8s ease-in-out;
   animation-delay: 0.5s;

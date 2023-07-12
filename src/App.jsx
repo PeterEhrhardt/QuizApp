@@ -5,6 +5,7 @@ import "./App.css";
 import SignIn from "./components/SignIn";
 import Navbar from "./components/Navbar";
 import PizzaChart from "./components/PizzaChart";
+import PizzaPage from "./components/PizzaPage";
 
 import Cookies from "universal-cookie";
 const cookies = new Cookies();
@@ -29,7 +30,7 @@ function App() {
     <>
       <div>
         <Navbar isSignedIn={isSignedIn} setDisplaySignIn={setDisplaySignIn} />
-        <PizzaChart />
+        <PizzaPage />
       </div>
     </>
   );

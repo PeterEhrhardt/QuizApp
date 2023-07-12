@@ -1,7 +1,12 @@
+import { storage } from "../firebase-config";
+import { ref, getDownloadURL } from "firebase/storage";
+
 export const pizzaList = [
   {
     name: "Grandiosa Original",
-    img: "src/assets/pizzaImgs/GrandiosaOriginal.png",
+    img: () => {
+      getDownloadURL(ref(storage, "images/Grandiosa Original.png"));
+    },
     rating: "6.9",
   },
   {

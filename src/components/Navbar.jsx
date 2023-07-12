@@ -5,7 +5,6 @@ import "../styles/navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = (props) => {
   const [menuIsClicked, setMenuIsClicked] = useState(false);
